@@ -1,0 +1,80 @@
+body
+{
+    background-image: url('halloweenbackground.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#soul
+{
+    left: 100px;
+    top: 400px;
+    position: absolute;
+    animation-name: soul;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes soul
+{
+    0% {left:100px; top:400px;}
+    20% {left:300px; top:400px;}
+    40% {left:500px; top:300px;}
+    50% {left:700px; top:50px;}
+    60% {left:900px; top:100px;}
+    80% {right:300px; top:200px;}
+    100% {right:500px; top:400px;}
+}
+#sandman
+{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    animation-name: sandman;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-play-state: running;
+}
+@keyframes sandman
+{
+    0%{transform: translateX(0) scaleX(1);}
+    50%{transform: translateX(940px) scaleX(1);}
+    51%{transform: translateX(940px) scaleX(-1);}
+    100%{transform: translateX(0) scaleX(-1);}
+}
+.lammo
+{
+    backdrop-filter: blur(10px);
+}
+.dangki
+{
+    color: white;
+}
+.lienhe
+{
+    text-align: center;
+    backdrop-filter: blur(10px);
+    padding: 0%;
+    border-radius: 15px;
+    border: 1px;
+    position: absolute;
+}
+.center
+{
+    margin-top: 275px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noidung
+{
+    text-align: center;
+    color: darkorange;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 1px;
+    font-size: large;
+}
